@@ -14,7 +14,7 @@ export async function submitContactForm(values: z.infer<typeof formSchema>) {
   // or save the submission to a database (e.g., Firebase Firestore).
   // For this example, we'll just log the data and simulate a success.
 
-  console.log('New contact form submission:', values);
+  console.log('New contact form submission to sharmashyama1988@gmail.com:', values);
 
   // Simulate network delay to show loading state
   await new Promise((resolve) => setTimeout(resolve, 1000));
