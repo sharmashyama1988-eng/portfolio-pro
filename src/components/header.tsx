@@ -28,9 +28,6 @@ const Header = () => {
               {link.label}
             </Link>
           ))}
-          <Button asChild>
-            <Link href="/optimize">AI Optimizer</Link>
-          </Button>
         </nav>
 
         <div className="md:hidden">
@@ -56,9 +53,6 @@ const Header = () => {
                     {link.label}
                   </Link>
                 ))}
-                <Button asChild size="lg" className="mt-4">
-                  <Link href="/optimize">AI Optimizer</Link>
-                </Button>
               </div>
             </SheetContent>
           </Sheet>
