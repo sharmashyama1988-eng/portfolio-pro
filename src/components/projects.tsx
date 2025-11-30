@@ -12,24 +12,28 @@ const projectData = [
     title: 'E-commerce Platform',
     description: 'A full-stack e-commerce solution with a custom CMS and payment integration.',
     tags: ['Next.js', 'Stripe', 'GraphQL'],
+    link: 'https://citybuilder3d.vercel.app/',
   },
   {
     id: 'project-2',
     title: 'Mobile Banking App',
     description: 'A secure and intuitive mobile app for managing personal finances on the go.',
     tags: ['React Native', 'Firebase', 'Plaid'],
+    link: 'https://studio-orpin-nine.vercel.app/',
   },
   {
     id: 'project-3',
     title: 'Data Analytics Dashboard',
     description: 'An interactive dashboard for visualizing complex business intelligence data.',
     tags: ['React', 'D3.js', 'Node.js'],
+    link: '#',
   },
   {
     id: 'project-4',
     title: 'SaaS Branding & Website',
     description: 'A complete branding overhaul and marketing website for a growing SaaS company.',
     tags: ['UI/UX', 'Figma', 'Webflow'],
+    link: '#',
   },
 ];
 
@@ -79,7 +83,7 @@ const Projects = () => {
                     ))}
                   </div>
                   <Button variant="outline" size="icon" asChild className="shrink-0">
-                    <Link href="#" target="_blank">
+                    <Link href={project.link || '#'} target="_blank">
                       <ArrowUpRight className="h-5 w-5" />
                       <span className="sr-only">View Project</span>
                     </Link>
